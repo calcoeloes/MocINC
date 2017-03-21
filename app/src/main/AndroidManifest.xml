@@ -17,7 +17,8 @@
         <activity android:name=".MainMenu" />
         <activity android:name=".DocumentTicket" />
         <activity android:name=".DetailTicket" />
-        <activity android:name=".Registrasi"></activity>
+        <activity android:name=".Registrasi" />
+        <activity android:name=".buy_ticket"></activity>
     </application>
 
 </manifest>

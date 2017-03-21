@@ -15,7 +15,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainMenu" />
-        <activity android:name=".documentTicket" />
+        <activity android:name=".DocumentTicket" />
         <activity android:name=".electronicTicket" />
         <activity android:name=".Registrasi"></activity>
     </application>

@@ -3,7 +3,7 @@ package com.example.android.mocinc;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class documentTicket extends AppCompatActivity {
+public class DocumentTicket extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

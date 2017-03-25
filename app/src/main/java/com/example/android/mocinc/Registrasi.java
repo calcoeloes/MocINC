@@ -20,5 +20,12 @@ public class Registrasi extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        Button button2=(Button)findViewById(R.id.registrasi_button);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                Intent i = new Intent(getApplicationContext(), Login.class);
+                startActivity(i);
+            }
+        });
     }
 }

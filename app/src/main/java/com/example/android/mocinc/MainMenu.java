@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.app.Activity;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainMenu extends Activity {
 
@@ -23,14 +24,22 @@ public class MainMenu extends Activity {
         Button logout = (Button) findViewById(R.id.button2);
         logout.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent (MainMenu.this, Login.class);
+                Intent intent = new Intent (getApplicationContext(), Login.class);
               finish();
             }
 
 
         });
 
+        ImageButton d= (ImageButton) findViewById(R.id.imageButton2);
+        d.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent (getApplicationContext(), DocumentTicket.class);
+                startActivity(i);
+            }
 
+
+        });
 
     }
 }

@@ -33,7 +33,7 @@
     <ImageButton
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:srcCompat="@android:drawable/picture_frame"
+        app:srcCompat="@android:drawable/star_big_on"
         android:id="@+id/imageButton"
         android:layout_alignTop="@+id/imageButton2"
         android:layout_alignLeft="@+id/textView6"
@@ -88,7 +88,7 @@
     <ImageButton
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:srcCompat="@android:drawable/picture_frame"
+        app:srcCompat="@android:drawable/ic_input_add"
         android:id="@+id/imageButton3"
 
 

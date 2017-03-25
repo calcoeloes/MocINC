@@ -15,13 +15,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainMenu" />
-        <activity android:name=".DocumentTicket"></activity>
+        <activity android:name=".DocumentTicket" />
         <activity android:name=".DetailTicket" />
         <activity android:name=".Registrasi" />
-<<<<<<< HEAD
-        <activity android:name=".buy_ticket"></activity>
-=======
->>>>>>> origin/master
+        <activity android:name=".buy_ticket" />
+        =======
+        >>>>>>> origin/master
+        <activity android:name=".ListBuyTicket"></activity>
     </application>
 
 </manifest>

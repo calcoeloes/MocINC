@@ -30,7 +30,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registrasi"
+<<<<<<< HEAD
+        tools:layout_editor_absoluteX="172dp"
+=======
         tools:layout_editor_absoluteX="174dp"
+>>>>>>> 2c3760bfdbcff05386f2f7f9adefb386baaa28c9
         tools:layout_editor_absoluteY="78dp" />
 
     <Button

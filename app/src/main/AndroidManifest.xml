@@ -14,29 +14,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainMenu" ></activity>
         <activity android:name=".MainMenu" />
+        <activity android:name=".Registrasi" />
+        <activity android:name=".listTicket" />
         <activity android:name=".documentTicket" />
-        <activity android:name=".electronicTicket" />
-        <activity android:name=".Registrasi" />
-        <activity android:name=".listTicket"></activity>
->>>>>>> 2c3760bfdbcff05386f2f7f9adefb386baaa28c9
->>>>>>> origin/master
-        <activity android:name=".DocumentTicket" />
         <activity android:name=".DetailTicket" />
-        <activity android:name=".Registrasi" />
         <activity android:name=".buy_ticket" />
-<<<<<<< HEAD
-        <activity android:name=".DatePick"></activity>
-=======
-        =======
-        >>>>>>> origin/master
-        <activity android:name=".ListBuyTicket"></activity>
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> 2c3760bfdbcff05386f2f7f9adefb386baaa28c9
->>>>>>> origin/master
+        <activity android:name=".DatePick" />
+        <activity android:name=".ListBuyTicket" />
+        <activity android:name=".SplashActivity"></activity>
     </application>
 
 </manifest>

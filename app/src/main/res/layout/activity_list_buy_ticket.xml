@@ -30,14 +30,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registrasi"
-<<<<<<< HEAD
-        tools:layout_editor_absoluteX="172dp"
-=======
-        tools:layout_editor_absoluteX="174dp"
->>>>>>> 2c3760bfdbcff05386f2f7f9adefb386baaa28c9
-        tools:layout_editor_absoluteY="78dp" />
+        tools:layout_editor_absoluteX="172dp" />
 
-    <Button
+ <Button
         android:id="@+id/payment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,7 +52,7 @@
             style="@style/Widget.AppCompat.CompoundButton.CheckBox"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_maginLeft="18sp"
+            android:layout_marginRight="30sp"
             android:background="@android:color/holo_blue_bright"
             android:fontFamily="serif"
             android:text="Una in Prepettum, Januari 17 2017"
@@ -69,6 +64,7 @@
             style="@style/Widget.AppCompat.CompoundButton.CheckBox"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:layout_marginRight="30sp"
             android:layout_weight="0.00"
             android:background="@android:color/holo_red_light"
             android:fontFamily="serif"
@@ -81,6 +77,7 @@
             style="@style/Widget.AppCompat.CompoundButton.CheckBox"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:layout_marginRight="30sp"
             android:background="@android:color/holo_purple"
             android:fontFamily="serif"
             android:text="Pakcik 2017, Maret 16 2017"

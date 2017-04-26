@@ -25,7 +25,7 @@ public class MainMenu extends Activity {
         logout.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent (getApplicationContext(), Login.class);
-              finish();
+              startActivity(intent);
             }
 
 
@@ -34,12 +34,32 @@ public class MainMenu extends Activity {
         ImageButton d= (ImageButton) findViewById(R.id.imageButton2);
         d.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent (getApplicationContext(), DocumentTicket.class);
+                Intent i = new Intent (getApplicationContext(), documentTicket.class);
                 startActivity(i);
             }
 
 
         });
 
+        ImageButton e= (ImageButton) findViewById(R.id.imageButton3);
+        e.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent (getApplicationContext(), buy_ticket.class);
+                startActivity(i);
+            }
+
+
+
+        });
+        ImageButton f= (ImageButton) findViewById(R.id.imageButton);
+        f.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent (getApplicationContext(), listTicket.class);
+                startActivity(i);
+            }
+
+
+
+        });
     }
 }

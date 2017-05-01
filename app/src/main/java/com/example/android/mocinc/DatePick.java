@@ -1,5 +1,6 @@
 package com.example.android.mocinc;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +9,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Toast;
 
-public class DatePick extends AppCompatActivity{
+public class DatePick extends Activity {
     DatePicker dp;
     Button tombolOK;
     View.OnClickListener listener;

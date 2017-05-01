@@ -1,5 +1,6 @@
 package com.example.android.mocinc;
 
+        import android.app.Activity;
         import android.support.v7.app.AppCompatActivity;
         import android.content.Intent;
         import android.os.Bundle;
@@ -10,7 +11,7 @@ package com.example.android.mocinc;
 
 
 //Created by Fathur (okedroid.com)
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends Activity {
 
     //Set waktu lama splashscreen
     private static int splashInterval = 2000;

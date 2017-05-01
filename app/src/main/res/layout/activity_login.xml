@@ -38,19 +38,20 @@
 
     <!--TODO : Ubah id menjadi "textUsername"-->
     <EditText
+        android:id="@+id/editText"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:textSize="20dp"
-        android:textAlignment="center"
-        android:inputType="textPersonName"
-        android:text=""
-        android:ems="10"
-        android:id="@+id/editText"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp"
         android:layout_above="@+id/textView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="19dp" />
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:text="Password"
@@ -66,19 +67,21 @@
 
     <!--TODO : Ubah id menjadi "password"-->
     <!--TODO : Buat align pada textPassword menjadi "center"-->
-        <EditText
+    <EditText
+        android:id="@+id/editText2"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:textSize="20dp"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/editText2"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/textView3"
         android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:text="Login"

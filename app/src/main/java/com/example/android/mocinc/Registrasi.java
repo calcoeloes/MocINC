@@ -1,12 +1,13 @@
 package com.example.android.mocinc;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
-public class Registrasi extends AppCompatActivity {
+public class Registrasi extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

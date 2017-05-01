@@ -1,9 +1,10 @@
 package com.example.android.mocinc;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class buy_ticket extends AppCompatActivity {
+public class buy_ticket extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

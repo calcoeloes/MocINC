@@ -12,10 +12,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Login extends AppCompatActivity {
-
+public class Login extends Activity {
+    DataHelper myDb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        myDb = new DataHelper(this);
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login);

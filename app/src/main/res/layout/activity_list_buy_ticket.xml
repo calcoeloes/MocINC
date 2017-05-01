@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="List Ticket"
-        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="78dp" />
 
     <Button
@@ -30,7 +30,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registrasi"
-        tools:layout_editor_absoluteX="172dp" />
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="78dp" />
 
  <Button
         android:id="@+id/payment"
@@ -88,7 +89,7 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Next" />
 
     </LinearLayout>
 

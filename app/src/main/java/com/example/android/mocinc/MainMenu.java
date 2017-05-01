@@ -12,6 +12,8 @@ import android.app.Activity;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import java.util.List;
+
 public class MainMenu extends Activity {
 
     Toolbar myToolbar;
@@ -25,7 +27,8 @@ public class MainMenu extends Activity {
         logout.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent (getApplicationContext(), Login.class);
-              startActivity(intent);
+                startActivity(intent);
+              finish();
             }
 
 
@@ -44,7 +47,7 @@ public class MainMenu extends Activity {
         ImageButton e= (ImageButton) findViewById(R.id.imageButton3);
         e.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent (getApplicationContext(), buy_ticket.class);
+                Intent i = new Intent (getApplicationContext(), ListBuyTicket.class);
                 startActivity(i);
             }
 

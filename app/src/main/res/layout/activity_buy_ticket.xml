@@ -1,251 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_buy_ticket"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="10"
     tools:context="com.example.android.mocinc.buy_ticket" >
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:layout_weight="1">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Buy Ticket Concert"
         android:textSize="30dp"
-
         tools:layout_editor_absoluteX="78dp"
         tools:layout_editor_absoluteY="67dp"
-        android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true" />
 
-
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></RelativeLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#D3EFFF"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:id="@+id/linearLayout" />
-
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="133dp"
-        android:weightSum="1"
-        android:layout_above="@+id/linearLayout3"
-        android:layout_toRightOf="@+id/linearLayout"
-        android:layout_toEndOf="@+id/linearLayout"
-        android:layout_marginBottom="14dp"
-        android:id="@+id/linearLayout2">
-
+        android:layout_weight="1"
+        android:weightSum="3">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ticket"
             android:textSize="18dp"
-            android:paddingLeft="30dp"/>
-
+            android:paddingLeft="30dp"
+            android:layout_weight="1"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=":"
             android:textSize="18dp"
-            android:paddingLeft="30dp"
-            android:layout_weight="1.22"/>
-
+            android:paddingLeft="38dp"
+            android:layout_weight="1"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/aleknagari"
+            android:text=""
             android:textSize="18dp"
-            android:paddingRight="140dp"/>
-
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:id="@+id/textLoc"/>
     </LinearLayout>
-
     <LinearLayout
-        android:layout_width="36dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="1"
-        tools:layout_editor_absoluteX="8dp"
-
-        android:id="@+id/linearLayout7"
-        android:layout_above="@+id/linearLayout2"
-        android:layout_toRightOf="@+id/linearLayout"
-        android:layout_marginBottom="27dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-
+        android:layout_weight="1"
+        android:weightSum="3">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
             android:text="For"
-            android:textSize="18dp"/>
-
+            android:textSize="18dp"
+            android:paddingLeft="30dp"
+            android:layout_weight="1"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=":"
             android:textSize="18dp"
-            android:layout_marginLeft="52dp"/>
-
+            android:paddingLeft="61dp"
+            android:layout_weight="1"/>
         <Spinner
             android:id="@+id/spinner1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/orang"
-            android:paddingLeft="20dp"/>
-
+            android:layout_marginLeft="50dp"/>
     </LinearLayout>
-
     <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="218dp"
-        android:id="@+id/linearLayout3"
-        android:layout_above="@+id/linearLayout6"
-        android:layout_toRightOf="@+id/linearLayout"
-        android:layout_toEndOf="@+id/linearLayout"
-        android:layout_marginBottom="19dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
-            android:text="Name"
-            android:textSize="18dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.22"
-            android:paddingLeft="30dp"
-            android:text=":"
-            android:textSize="18dp"/>
-
-        <EditText
-            android:id="@+id/nama"
-            android:layout_width="233dp"
-            android:layout_height="wrap_content"
-            android:hint="Nama"
-            android:paddingLeft="5dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="273dp"
-        android:id="@+id/linearLayout6"
-        android:layout_alignBottom="@+id/linearLayout4"
-        android:layout_toRightOf="@+id/linearLayout"
-        android:layout_toEndOf="@+id/linearLayout">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
-            android:text="E-Mail"
-            android:textSize="18dp"/>
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/email"
-            android:layout_alignBottom="@+id/email"
-            android:layout_toEndOf="@+id/submit"
-            android:layout_toRightOf="@+id/submit"
-            android:layout_weight="1"
-            android:paddingLeft="13dp"
-            android:text=":"
-            android:textSize="18dp" />
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="233dp"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/textView31"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="49dp"
-            android:layout_weight="1"
-            android:hint="E-Mail"
-            android:paddingLeft="5dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="334dp"
-        android:layout_alignTop="@+id/textView31"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout4">
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
-            android:text="Address"
-            android:textSize="18dp" />
-
-    </LinearLayout>
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/submit"
-        android:onClick="Submit"
-        android:text="Submit"
-        tools:layout_editor_absoluteY="400dp"
-        tools:layout_editor_absoluteX="280dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/linearLayout"
-        android:layout_toEndOf="@+id/linearLayout"
-        android:layout_marginBottom="44dp" />
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="18dp"
+            android:paddingLeft="30dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="18dp"
+            android:paddingLeft="40dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            />
 
-    <EditText
-        android:id="@+id/alamat"
-        android:layout_width="233dp"
-        android:layout_height="wrap_content"
-        android:hint="Address"
-        android:paddingLeft="5dp"
-        android:layout_above="@+id/submit"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="19dp" />
-
-    <TextView
-        android:id="@+id/textView31"
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1.22"
-        android:paddingLeft="30dp"
-        android:text=":"
-        android:textSize="18dp"
-        android:layout_alignBaseline="@+id/alamat"
-        android:layout_alignBottom="@+id/alamat"
-        android:layout_alignRight="@+id/textView13"
-        android:layout_alignEnd="@+id/textView13" />
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="18dp"
+            android:paddingLeft="30dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="18dp"
+            android:paddingLeft="43dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textSize="18dp"
+            android:paddingLeft="30dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="18dp"
+            android:paddingLeft="30dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"></RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/butAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="PEMBAYARAN" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -9,23 +9,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Login">
-
-        </activity>
-        <activity android:name=".MainMenu" />
-        <activity android:name=".Registrasi" />
-        <activity android:name=".listTicket" />
-        <activity android:name=".documentTicket" />
-        <activity android:name=".DetailTicket" />
-        <activity android:name=".buy_ticket" />
-        <activity android:name=".DatePick" />
-        <activity android:name=".ListBuyTicket" />
-        <activity android:name=".SplashActivity" />
-        <activity android:name=".InformationTicket">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".MainMenu" />
+        <activity android:name=".Registrasi" />
+        <activity android:name=".listTicket" >
+
+        </activity>
+        <activity android:name=".documentTicket" />
+        <activity android:name=".Payment"/>
+        <activity android:name=".DetailTicket" />
+        <activity android:name=".buy_ticket" >
+
+        </activity>
+        <activity android:name=".DatePick" />
+
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".InformationTicket">
+
         </activity>
         <meta-data
             android:name="com.google.android.gms.version"

@@ -44,16 +44,7 @@ public class MainMenu extends Activity {
 
         });
 
-        ImageButton e= (ImageButton) findViewById(R.id.imageButton3);
-        e.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent i = new Intent (getApplicationContext(), ListBuyTicket.class);
-                startActivity(i);
-            }
 
-
-
-        });
         ImageButton f= (ImageButton) findViewById(R.id.imageButton);
         f.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

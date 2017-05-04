@@ -27,28 +27,9 @@ public class InformationTicket extends Activity implements OnMapReadyCallback{
 
     GoogleMap m_map;
     boolean mapReady=false;
-    public static final CameraPosition GSG =
-            new CameraPosition.Builder().target(new LatLng(-6.976653, 107.630278))
-                    .zoom(18)
-                    .bearing(0)
-                    .tilt(0)
-                    .build();
-    public static final CameraPosition TUCH =
-            new CameraPosition.Builder().target(new LatLng(-6.971541, 107.631083))
-                    .zoom(18)
-                    .bearing(0)
-                    .tilt(0)
-                    .build()
-            ;
-    public static final CameraPosition POLTEK =
-            new CameraPosition.Builder().target(new LatLng(-6.973260, 107.632670))
-                    .zoom(18)
-                    .bearing(0)
-                    .tilt(0)
-                    .build()
-            ;
-
-
+    public static CameraPosition lokasi;
+    double lat,lang;
+    Bundle b;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,53 +39,47 @@ public class InformationTicket extends Activity implements OnMapReadyCallback{
         TextView judul = (TextView) findViewById(R.id.textTitle);
         TextView loc = (TextView)findViewById(R.id.textLoc);
         TextView jam = (TextView)findViewById(R.id.textJam);
-        Bundle b = getIntent().getExtras();
-        judul.setText(b.getCharSequence("acara"));
-
-        if(judul.getText().toString().equalsIgnoreCase("ALEK NAGARI 2017")){
-            loc.setText("Telkom University Convention Hall");
-            jam.setText("18.00 - 21.00");
-        }
-        else if(judul.getText().toString().equalsIgnoreCase("UNA IN PERPETTUM")){
-            loc.setText("Aula Fakultas Ilmu Terapan Tel-U");
-            jam.setText("19.00 - 22.30");
-        }
-        else if(judul.getText().toString().equalsIgnoreCase("PAKCIK 2017")){
-            loc.setText("Gedung Serba Guna Telkom University");
-            jam.setText("19.30 - 21.30");
-        }
+        b = getIntent().getExtras();
+        judul.setText(b.getCharSequence("nama"));
+        loc.setText(b.getCharSequence("lokasi"));
+        jam.setText("waktu");
 
         Button pesan = (Button) findViewById(R.id.butPesan);
 
         pesan.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
             TextView text = (TextView) findViewById(R.id.textTitle);
-                Bundle b = new Bundle();
-                b.putString("acara",text.getText().toString());
                 Intent i = new Intent(getApplicationContext(), buy_ticket.class);
-                i.putExtras(b);
+
+                i.putExtra("id", b.getCharSequence("id"));
+                i.putExtra("harga", b.getCharSequence("harga"));
+                i.putExtra("lang", b.getCharSequence("lang"));
+                i.putExtra("lat", b.getCharSequence("lat"));
+                i.putExtra("lokasi", b.getCharSequence("lokasi"));
+                i.putExtra("nama", b.getCharSequence("nama"));
+                i.putExtra("waktu", b.getCharSequence("waktu"));
+
                 startActivity(i);
 
             }
         });
+        lat = Double.parseDouble(b.getCharSequence("lat").toString());
+       lang = Double.parseDouble(b.getCharSequence("lang").toString());
+
+        lokasi =
+                new CameraPosition.Builder().target(new LatLng(lat, lang))
+                        .zoom(18)
+                        .bearing(0)
+                        .tilt(0)
+                        .build();
     }
     @Override
     public void onMapReady(GoogleMap map){
         mapReady = true;
         m_map = map;
         TextView judul = (TextView) findViewById(R.id.textTitle);
-        if(judul.getText().toString().equalsIgnoreCase("ALEK NAGARI 2017")){
-            flyTo(TUCH);
-            m_map.addMarker(new MarkerOptions().position(new LatLng(-6.971541, 107.631083)));
-        }
-        else if(judul.getText().toString().equalsIgnoreCase("UNA IN PERPETTUM")){
-            flyTo(POLTEK);
-            m_map.addMarker(new MarkerOptions().position(new LatLng(-6.973260, 107.632670)));
-        }
-        else if(judul.getText().toString().equalsIgnoreCase("PAKCIK 2017")){
-            flyTo(GSG);
-            m_map.addMarker(new MarkerOptions().position(new LatLng(-6.976653, 107.630278)));
-        }
+        flyTo(lokasi);
+        m_map.addMarker(new MarkerOptions().position(new LatLng(lat, lang)));
 
     }
     private void flyTo(CameraPosition target)

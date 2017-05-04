@@ -17,12 +17,13 @@ import java.util.List;
 public class MainMenu extends Activity {
 
     Toolbar myToolbar;
+    Bundle b;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main_menu);
-
+        b = getIntent().getExtras();
         Button logout = (Button) findViewById(R.id.button2);
         logout.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -49,6 +50,7 @@ public class MainMenu extends Activity {
         f.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent i = new Intent (getApplicationContext(), listTicket.class);
+                i.putExtra("username", b.getString("username").toString());
                 startActivity(i);
             }
 

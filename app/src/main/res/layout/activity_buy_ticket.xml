@@ -78,12 +78,13 @@
             android:textSize="18dp"
             android:paddingLeft="61dp"
             android:layout_weight="1"/>
+
         <Spinner
-            android:id="@+id/spinner1"
+            android:id="@+id/spinnerJumlah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/orang"
-            android:layout_marginLeft="50dp"/>
+            android:layout_marginLeft="50dp"
+            android:entries="@array/orang" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -105,11 +106,12 @@
             android:textSize="18dp"
             android:paddingLeft="40dp"
             android:layout_weight="1"/>
+
         <EditText
+            android:id="@+id/editNama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            />
+            android:layout_marginLeft="50dp" />
 
     </LinearLayout>
     <LinearLayout
@@ -132,11 +134,12 @@
             android:textSize="18dp"
             android:paddingLeft="43dp"
             android:layout_weight="1"/>
+
         <EditText
+            android:id="@+id/editEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            />
+            android:layout_marginLeft="50dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -158,11 +161,12 @@
             android:textSize="18dp"
             android:paddingLeft="30dp"
             android:layout_weight="1"/>
+
         <EditText
+            android:id="@+id/editAlamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            />
+            android:layout_marginLeft="50dp" />
     </LinearLayout>
 
     <RelativeLayout
